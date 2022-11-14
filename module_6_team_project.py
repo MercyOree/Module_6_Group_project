@@ -3,23 +3,16 @@
 #This program is guessing program that will take a number and ramdomly with a random given number.
 
 import random
-number = random.choice
+num = (random.randint(1, 10))
 
+for count in range(3):
+    guess = int(input("lets play high/low, I'm thinking of a number between 1-10:"))
+    if guess < num:
+        print ("Higher!")
+    elif guess > num:
+        print ("Lower!")
+    elif guess == num:
+        print ("Congratulations! You are Correct")
 
-# number == 3
-input("enter any number from 1 to 10 by guessing: ")
-if number == 3:
-    number = "This guess is correct"
-    print("You did guessed it")
-elif number >= 3:
-    number = "This guess is incorrect"
-    print("Your guess is to low, Guess higher")
-    input("enter any number from 1 to 10 by guessing: ")
-elif number <= 3:
-    number = "This guess is incorrect"
-    print("You guess is to high, Guess low")
-    input("enter any number from 1 to 10 by guessing: ")
-
-
-
-
+else:
+    print ("You ran out of guessess")
