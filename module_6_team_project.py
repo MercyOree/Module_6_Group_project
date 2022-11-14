@@ -13,6 +13,7 @@ for count in range(3):
         print ("Lower!")
     elif guess == num:
         print ("Congratulations! You are Correct")
+        break
 
 else:
     print ("You ran out of guessess")
